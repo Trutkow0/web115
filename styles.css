@@ -42,7 +42,7 @@ nav li a:hover {
 body header h1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 body footer {
