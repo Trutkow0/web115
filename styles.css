@@ -21,6 +21,11 @@ nav li {
   list-style-type: none;
 }
 
+nav li a {
+  color: #b8e1dd;
+  padding: 10px;
+}
+
 body header h1 {
   display: flex;
   flex-direction: column;
