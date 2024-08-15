@@ -8,6 +8,8 @@ html {
 nav {
   background-color: #044a42;
   border: 2px solid #062925;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul {
