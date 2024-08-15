@@ -57,8 +57,24 @@ body main p {
   font-size: 1.15em;
 }
 
+body main p a {
+  color: #044a42;
+}
+
+body main p a:hover {
+  color: #3a9188;
+}
+
 body footer {
   font-style: italic;
   padding: 10px;
   margin: 5px;
+}
+
+body footer a {
+  color: #044a42;
+}
+
+body footer a: hover {
+  color: #3a9188;
 }
