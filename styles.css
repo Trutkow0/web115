@@ -4,6 +4,12 @@ html {
   font-family: Monospace;
 }
 
+nav ul {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+
 body h1 {
   display: flex;
   flex-direction: column;
