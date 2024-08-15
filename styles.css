@@ -7,7 +7,7 @@ html {
 nav ul {
   display: flex;
   flex-direction: row;
-  text-decoration: none;
+  list-style-type: none;
 }
 
 body h1 {
