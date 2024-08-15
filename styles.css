@@ -24,7 +24,6 @@ nav ul {
 nav li {
   display: inline-block;
   list-style-type: none;
-  border: 2px solid #044a42;
   padding: 5px;
   margin: 0 15px;
 }
