@@ -4,6 +4,7 @@ html {
   font-family: Monospace;
 }
 
+/*Nav Bar Styles*/
 nav {
   background-color: #044a42;
   border: 2px solid #062925;
@@ -19,6 +20,7 @@ nav ul {
 nav li {
   display: inline-block;
   list-style-type: none;
+  border: 2px solid black;
 }
 
 nav li a {
@@ -26,6 +28,7 @@ nav li a {
   padding: 10px;
 }
 
+/*Body Styles*/
 body header h1 {
   display: flex;
   flex-direction: column;
