@@ -4,9 +4,20 @@ html {
   font-family: Monospace;
 }
 
+nav {
+  background-color: #044a42;
+  border: 2px solid #062925;
+}
+
 nav ul {
+  list-style-type: none;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+
+nav li {
+  display: inline-block;
   list-style-type: none;
 }
 
