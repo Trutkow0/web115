@@ -44,6 +44,18 @@ body header h1 {
   align-items: center;
 }
 
+body main {
+  pading: 10px;
+  margin: 5px;
+}
+
+body main p {
+  padding: 5px;
+  font-size: 1.15em;
+}
+
 body footer {
   font-style: italic;
+  padding: 10px;
+  margin: 5px;
 }
