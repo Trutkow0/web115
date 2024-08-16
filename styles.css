@@ -79,6 +79,10 @@ body footer a:hover {
   color: #3a9188;
 }
 
+body footer p a {
+  text-decoration: none;
+}
+
 body footer ul {
   list-style-type: none;
   display: flex;
