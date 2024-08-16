@@ -48,8 +48,8 @@ body header h1 {
 }
 
 body main {
-  padding: 10px;
-  margin: 5px;
+  padding: 0;
+  margin: 100px;
 }
 
 body main p {
@@ -67,8 +67,8 @@ body main p a:hover {
 
 body footer {
   font-style: italic;
-  padding: 10px;
-  margin: 5px;
+  padding: 0;
+  margin: 100px;
 }
 
 body footer a {
