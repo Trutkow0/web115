@@ -87,3 +87,10 @@ body footer ul {
   padding: 10px;
   margin: 0;
 }
+
+body footer li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 5px;
+  margin: 0 15px;
+}
