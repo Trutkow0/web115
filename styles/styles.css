@@ -1,12 +1,12 @@
 html {
-    background-color: #b8e1dd;
-    color: #062925;
+    background-color: #BCC5AA;
+    color: #36454F;
     font-family: Monospace;
   }
   
   /*Nav Bar Styles*/
   nav {
-    background-color: #044a42;
+    background-color: #7A5C3E;
   }
   
   nav ul {
@@ -27,12 +27,12 @@ html {
   }
   
   nav li a {
-    color: #b8e1dd;
+    color: #BCC5AA;
     padding: 10px;
   }
   
   nav li a:hover {
-    color: #3a9188;
+    color: #D97335;
   }
   
   /*Body Styles*/
@@ -50,6 +50,14 @@ html {
     font-size: 2.5em;
   }
   
+  .logo {
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   body main h2 {
     font-size: 2em;
   }
@@ -69,11 +77,11 @@ html {
   }
   
   body main p a {
-    color: #044a42;
+    color: #7A5C3E;
   }
   
   body main p a:hover {
-    color: #3a9188;
+    color: #D97335;
   }
 
   body main center {
@@ -82,8 +90,15 @@ html {
     align-items: center;
   }
 
+  body main h3 {
+    font-size: 1.5em;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+
   body main ul {
     font-size: 1.5em;
+    margin-top: 0;
   }
 
   body main ul li {
@@ -103,11 +118,11 @@ html {
   }
   
   body footer a {
-    color: #044a42;
+    color: #7A5C3E;
   }
   
   body footer a:hover {
-    color: #3a9188;
+    color: #D97335;
   }
   
   body footer p a {
