@@ -150,26 +150,3 @@ html {
     padding: 5px;
     margin: 0 15px;
   }
-
-  /*Styles for mobile*/
-  @media (max-width: 768px) {
-    nav ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    h1 {
-      margin: 50px;
-    }
-
-    body main {
-      margin: 50px;
-    }
-
-    body footer ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
