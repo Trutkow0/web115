@@ -63,6 +63,13 @@ html {
     padding: 0;
     margin: 0;
   }
+
+  .mono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   
   .logo {
     font-size: 1.25em;
