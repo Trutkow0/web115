@@ -1,6 +1,6 @@
   /*Styles for mobile*/
   @media (max-width: 768px) {
-    nav ul {
+    nav ul, body footer ul {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -13,11 +13,5 @@
     body main {
       margin: 50px;
       font-size: .75em;
-    }
-
-    body footer ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
   }
