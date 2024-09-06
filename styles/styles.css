@@ -35,11 +35,15 @@ html {
     color: #D97335;
   }
 
-   /*Heading Styles*/
-  h1 {
+  /*Styles with Same Flex Display, Direction, and Alignment*/
+  h1, .mono, .logo, body main center, body footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+   /*Heading Styles*/
+  h1 {
     padding: 0;
     margin-top: 50px;
     font-size: 2.5em;
@@ -65,9 +69,6 @@ html {
   }
 
   .mono, .logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
   }
   
@@ -99,11 +100,7 @@ html {
     color: #D97335;
   }
 
-  body main center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  body main center {}
 
   body main ul {
     font-size: 1.5em;
@@ -118,9 +115,6 @@ html {
     font-size: 1em;
   }
   body footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 0;
     margin-top: 50px;
     font-style: italic;
