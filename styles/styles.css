@@ -36,7 +36,7 @@ html {
   }
 
   /*Styles with Same Flex Display, Direction, and Alignment*/
-  h1, .mono, .logo, body main center, body footer{
+  .mono, .logo, body main center, body footer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,6 +44,9 @@ html {
 
    /*Heading Styles*/
   h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0;
     margin-top: 50px;
     font-size: 2.5em;
