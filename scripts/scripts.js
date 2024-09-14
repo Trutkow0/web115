@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Update the greeting text
-        greeting.textContent = `Welcome to Tenacious Raccoon, ${fullName}!`;
+        greeting.textContent = `Fizz Buzz 0 | Welcome to Tenacious Raccoon, ${fullName}!`;
 
         // Prompt the user for a number, using the entered first name
         let countNumber = prompt(`How high do you want to count, ${firstName}?`);
