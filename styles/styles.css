@@ -1,9 +1,14 @@
 html {
     background-color: #BCC5AA;
     color: #36454F;
-    font-family: Monospace;
+    font-family: monospace;
   }
   
+  header {
+    height: 100px;
+    background-color: #36454F;
+  }
+
   /*Nav Bar Styles*/
   nav {
     background-color: #302924;
@@ -42,15 +47,15 @@ html {
     align-items: center;
   }
 
-   /*Heading Styles*/
+  /*Heading Styles*/
   h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0;
+    padding-top: 25px;
     margin-top: 50px;
     font-size: 2.5em;
-    color: #302924;
+    color: #BCC5AA;
   }
 
   h2 {
@@ -68,13 +73,13 @@ html {
   /*Body Styles*/
   body {
     padding: 0;
-    margin: 0;
+    margin: -50px 0 0 0;
   }
-
+  
   .mono, .logo {
     justify-content: center;
   }
-  
+
   .logo {
     font-size: 1.25em;
     font-style: italic;
@@ -103,7 +108,6 @@ html {
     color: #D97335;
   }
 
-  body main center {}
 
   body main ul {
     font-size: 1.5em;
@@ -149,4 +153,25 @@ html {
     list-style-type: none;
     padding: 5px;
     margin: 0 15px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    border: solid #302924;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    background-color: #302924;
+    color: #BCC5AA;
+    margin: 0 auto;
+  }
+
+  input {
+    margin-bottom: 10px;
+  }
+
+  form #submit {
+    color: #302924;
+    font-style: normal; 
   }
