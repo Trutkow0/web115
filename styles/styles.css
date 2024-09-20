@@ -34,6 +34,7 @@ html {
   nav li a {
     color: #BCC5AA;
     padding: 10px;
+    text-decoration: none;
   }
   
   nav li a:hover {
@@ -41,7 +42,7 @@ html {
   }
 
   /*Styles with Same Flex Display, Direction, and Alignment*/
-  .mono, .logo, body main center, body footer{
+  body main center, body footer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,6 +62,7 @@ html {
   h2 {
     font-size: 2em;
     color: #302924;
+    text-align: center;
   }
 
   h3 {
@@ -74,16 +76,6 @@ html {
   body {
     padding: 0;
     margin: -50px 0 0 0;
-  }
-  
-  .mono, .logo {
-    justify-content: center;
-  }
-
-  .logo {
-    font-size: 1.25em;
-    font-style: italic;
-    color: #302924;
   }
 
   body main {
@@ -121,40 +113,49 @@ html {
   body main li ul {
     font-size: 1em;
   }
-  body footer {
+
+  /*Footer Styles*/
+  footer {
     padding: 0;
     margin-top: 50px;
-    font-style: italic;
-  }
-  
-  body footer a {
-    color: #302924;
-  }
-  
-  body footer a:hover {
+    font-size: 1.25em;
+    background-color: #36454F;
     color: #D97335;
   }
   
-  body footer p a {
+  footer a {
+    color: #BCC5AA;
     text-decoration: none;
   }
   
-  body footer ul {
+  footer a:hover {
+    color: #D97335;
+  }
+  
+  footer p a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10px;
+    background-color: #302924;
+    width: 100%;
     margin: 0;
   }
   
-  body footer li {
+  footer li {
     display: inline-block;
     list-style-type: none;
-    padding: 5px;
-    margin: 0 15px;
+    padding: 15px;
+    margin: 0;
   }
 
+  /*Form Styles*/
   form {
     display: flex;
     flex-direction: column;
