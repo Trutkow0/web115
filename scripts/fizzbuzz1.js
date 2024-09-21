@@ -23,11 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Check if the number is divisible by 3
                 if (i % 3 === 0) {
-                    line.textContent = `${i}. Rutkowski's`;
+                    line.textContent = `${i}. Tenacious`;
                 } if else (i % 5 === 0) {
-                    line.textContent = `${i}. Tenacious Raccoon`;
-                } else {
-                    line.textContent = `${i}. Timothy`;
+                    line.textContent = `${i}. Raccoon`;
+                } if else (i % 3 && 5 === 0) {
+                    line.textContent = `${i} Tenacious Raccoon`
+                }else {
+                    line.textContent = `${i}. Timohty Rutkowski's`;
                 }
 
                 // Append the line to the output container
