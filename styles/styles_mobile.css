@@ -1,5 +1,6 @@
   /*Styles for mobile*/
   @media (max-width: 768px) {
+    
     nav ul, body footer ul {
       display: flex;
       flex-direction: column;
