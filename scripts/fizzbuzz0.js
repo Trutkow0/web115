@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
         // Prevent the default form submission behavior
         event.preventDefault();
 
+        // Show output container after click
+        outputContainer.style.display="block";
+
         // Get the input values
         const firstName = document.getElementById("first-name").value;
         const middleInitial = document.getElementById("middle-initial").value;
@@ -16,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Create a personalized greeting
         let fullName = firstName;
         if (middleInitial) {
-            fullName += " " + middleInitial;
+            fullName += " " + middleInitial + ".";
         }
         if (lastName) {
             fullName += " " + lastName;
@@ -29,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let countNumber = prompt(`How high do you want to count, ${firstName}?`);
 
         // Convert the input to a number
-        ountNumber = parseInt(countNumber);
+        countNumber = parseInt(countNumber);
 
         // Clear previous output if any
         outputContainer.innerHTML = "";
