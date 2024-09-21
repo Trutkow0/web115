@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
             for (let i = 1; i <= countNumber; i++) {
                 const line = document.createElement("p");
 
-                // Check if the number is divisible by 3
+                // Check if the number is divisible by 3, 5, or both
                 if (i % 3 === 0) {
                     line.textContent = `${i}. Tenacious`;
                 } if else (i % 5 === 0) {
