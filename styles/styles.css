@@ -2,16 +2,20 @@ html {
     background-color: #BCC5AA;
     color: #36454F;
     font-family: monospace;
+    padding: 0;
+    margin: 0;
   }
   
   header {
-    height: 100px;
     background-color: #36454F;
+    margin: 0;
+    height: 80px;
   }
 
   /*Nav Bar Styles*/
   nav {
     background-color: #302924;
+    margin: 0;
   }
   
   nav ul {
@@ -21,6 +25,7 @@ html {
     justify-content: center;
     padding: 10px;
     margin: 0;
+    
   }
   
   nav li {
@@ -116,8 +121,7 @@ html {
 
   /*Footer Styles*/
   footer {
-    padding: 0;
-    margin-top: 50px;
+    margin-top: 25px;
     font-size: 1.25em;
     background-color: #36454F;
     color: #D97335;
@@ -144,7 +148,7 @@ html {
     flex-direction: row;
     justify-content: center;
     background-color: #302924;
-    width: 97.7%;
+    padding: 10px;
     margin: 0;
   }
   
@@ -159,20 +163,48 @@ html {
   form {
     display: flex;
     flex-direction: column;
-    border: solid #302924;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-    background-color: #302924;
-    color: #BCC5AA;
+    border-radius: 5%;
+    padding: 25px 25px 0;
+    background-color: #abb693;
+    color: #302924;
     margin: 0 auto;
+    font-size: 1.25em;
+    box-shadow: 3px 3px 3px #302924, 6px 6px 6px #3a312b, 9px 9px 9px #423831;
   }
 
   input {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    padding: 5px;
+    font-size: 1.15em;
+    color: #302924;
+    background-color: #BCC5AA;
+    border-radius: 2.5%;
   }
 
   form #submit {
-    color: #302924;
+    background-color: #D97335;
+    color: #BCC5AA;
     font-style: normal; 
+    border-radius: 2.5%;
+  }
+
+  /*output-container styles for Fizz Buzz*/
+  #output-container {
+    display: none;
+    margin: 25px auto;
+    padding: 0 10px;
+    background-color: #abb693;
+    color: #302924;
+    box-shadow: inset 0px 2px 5px #302924;
+  }
+
+  /*Run button styles for Fizz Buzz 1*/
+  #run-count {
+    display: block;
+    margin: 0 auto;
+    background-color: #D97335;
+    color: #BCC5AA;
+    padding: 10px 20px;
+    font-size: 1.5em;
+
   }
