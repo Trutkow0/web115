@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Check if the number is divisible by 3, 5, or both
                 if (i % 3 === 0) {
                     line.textContent = `${i}. Tenacious`;
-                }else if (i % 5 === 0) {
+                } else if (i % 5 === 0) {
                     line.textContent = `${i}. Raccoon`;
-                }else if (i % 3 === && i % 5 === 0) {
-                    line.textContent = `${i} Tenacious Raccoon`
-                }else {
+                } else if (i % 3 === && i % 5 === 0) {
+                    line.textContent = `${i} Tenacious Raccoon`;
+                } else {
                     line.textContent = `${i}. Timohty Rutkowski's`;
                 }
 
