@@ -22,14 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 const line = document.createElement("p");
 
                 // Check if the number is divisible by 3, 5, or both
-                if (i % 3 === 0) {
+                if (i % 3 === 0 && i % 5 === 0) {
+                    line.textContent = `${i}. Tenacious Raccoon`;
+                } else if (i % 3 === 0) {
                     line.textContent = `${i}. Tenacious`;
                 } else if (i % 5 === 0) {
                     line.textContent = `${i}. Raccoon`;
-                } else if (i % 3 === 0 && i % 5 === 0) {
-                    line.textContent = `${i} Tenacious Raccoon`;
                 } else {
-                    line.textContent = `${i}. Timohty Rutkowski's`;
+                    line.textContent = `${i}. Timothy Rutkowski's`;
                 }
 
                 // Append the line to the output container
