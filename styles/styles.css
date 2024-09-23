@@ -46,6 +46,12 @@ html {
     color: #D97335;
   }
 
+  figure {
+    display: block;
+    margin: 0 -100px;
+    text-align: center;
+  }
+
   /*Styles with Same Flex Display, Direction, and Alignment*/
   body main center, body footer{
     display: flex;
@@ -59,7 +65,7 @@ html {
     flex-direction: column;
     align-items: center;
     padding-top: 25px;
-    margin-top: 50px;
+    margin: 50px auto;
     font-size: 2.5em;
     color: #BCC5AA;
   }
@@ -87,9 +93,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin: auto 200px;
   }
   
   body main p {
@@ -124,7 +128,7 @@ html {
     margin-top: 25px;
     font-size: 1.25em;
     background-color: #36454F;
-    color: #D97335;
+    color: #BCC5AA;
   }
   
   footer a {
