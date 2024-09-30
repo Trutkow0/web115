@@ -196,10 +196,12 @@ html {
   #output-container {
     display: none;
     margin: 25px auto;
-    padding: 0 10px;
+    padding: 0 50px;
     background-color: #abb693;
     color: #302924;
     box-shadow: inset 0px 2px 5px #302924;
+    overflow-y: auto;
+    max-height: 300px;
   }
 
   /*Run button styles for Fizz Buzz 1*/
