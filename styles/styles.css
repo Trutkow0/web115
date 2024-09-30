@@ -201,7 +201,7 @@ html {
     color: #302924;
     box-shadow: inset 0px 2px 5px #302924;
     overflow-y: auto;
-    max-height: 500px;
+    max-height: 510px;
   }
 
   /*Run button styles for Fizz Buzz 1*/
