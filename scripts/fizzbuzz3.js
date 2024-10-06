@@ -52,19 +52,23 @@ for (let i = 1; i <= countNumber; i++) {
     const line = document.createElement("p");
 
     // Check divisibility using the checkDivision function
-    if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor)) {
-        line.textContent = `${i}. ${firstName} ${middleInitial}`;
-    } else if (checkDivision(i, firstDivisor) && checkDivision(i, thirdDivisor)) {
-        line.textContent = `${i} ${firstName} ${lastName}`;      
-    } else if (checkDivision(i, firstDivisor)) {
-        line.textContent = `${i}. ${firstName}`;
-    } else if (checkDivision(i, secondDivisor)) {
-        line.textContent = `${i}. ${middleInitial}.`;
-    } else if (checkDivision(i, thirdDivisor)) {
-        line.textContent = `${i}. ${lastName}`;
-    } else {
-        line.textContent = `${i}. ${firstName} ${middleInitial}. ${lastName}`;
-    }
+            if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor) && checkDivision(i, thirdDivisor)) {
+                line.textContent = `${i}. ${firstName} ${middleInitial}. ${lastName}`;
+            } else if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor)) {
+                line.textContent = `${i}. ${firstName} ${middleInitial}.`;      
+            } else if (checkDivision(i, firstDivisor) && checkDivision(i, thirdDivisor)) {
+                line.textContent = `${i}. ${firstName} ${lastName}`;
+            } else if (checkDivision(i, secondDivisor) && checkDivision(i, thirdDivisor)) {
+                line.textContent = `${i}. ${middleInitial}. ${lastName}`;
+            } else if (checkDivision(i, firstDivisor)) {
+                line.textContent = `${i}. ${firstName}`;
+            } else if (checkDivision(i, secondDivisor)) {
+                line.textContent = `${i}. ${middleInitial}.`;
+            } else if (checkDivision(i, thirdDivisor)) {
+                line.textContent = `${i}. ${lastName}`;
+            } else {
+                line.textContent = `${i}. Fizz Buzz 3`;
+            }
 
     // Append the line to the output container
     outputContainer.appendChild(line);
