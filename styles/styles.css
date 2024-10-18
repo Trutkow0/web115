@@ -52,6 +52,75 @@ html {
     text-align: center;
   }
 
+  /* Dropdown parent item styling */
+nav li.dropdown {
+  position: relative;
+  padding: 5px;
+}
+
+/* Style for dropdown toggle (parent item) */
+nav li.dropdown > a {
+  color: #BCC5AA;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1em;
+}
+
+/* Dropdown menu styles */
+nav li .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #302924;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  z-index: 1000;
+  width: 200px;
+}
+
+/* Dropdown items styling */
+nav li .dropdown-menu li {
+  display: block;
+  padding: 10px;
+  margin: 0;
+  font-size: 1em;
+}
+
+/* Links inside dropdown menu */
+nav li .dropdown-menu li a {
+  color: #BCC5AA;
+  background-color: #302924;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+}
+
+/* Hover state for dropdown items */
+nav li .dropdown-menu li a:hover {
+  background-color: #D97335;
+  color: #BCC5AA;
+}
+
+/* Show dropdown menu when hovering over parent item */
+nav li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Ensure the dropdown items align correctly with flex */
+nav ul {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the parent item when dropdown is open */
+nav li.dropdown:hover > a {
+  color: #D97335; /* Change color when hovering over the parent */
+}
+
+
   /*Styles with Same Flex Display, Direction, and Alignment*/
   body main center, body footer{
     display: flex;
@@ -167,13 +236,34 @@ html {
   form {
     display: flex;
     flex-direction: column;
-    border-radius: 5%;
     padding: 25px 25px 0;
     background-color: #abb693;
     color: #302924;
     margin: 0 auto;
     font-size: 1.25em;
     box-shadow: 3px 3px 3px #302924, 6px 6px 6px #3a312b, 9px 9px 9px #423831;
+  }
+
+  .name-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .count-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .divisor-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .word-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
   }
 
   input {
@@ -212,5 +302,4 @@ html {
     color: #BCC5AA;
     padding: 10px 20px;
     font-size: 1.5em;
-
   }
