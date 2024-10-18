@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+        <meta charset="utf-8">
+        <title>Timothy Rutkowski's Tenacious Raccoon | Fizz Buzz 3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Tim Rutkowski">
+        <meta name="description" content="Website for WEB115">
+        <meta name="author" content="Timothy Rutkowski">
+        <link rel="icon" href="images/TR_darkFavicon.png">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/styles_mobile.css">
+        <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
+
+</head>
+ 
+<body>
+        <div data-include="components/header.html"></div>
+        <div data-include="components/nav.html"></div>
+        
+        <main>
+                <h2 id="greeting">Fizz Buzz 4 | Welcome to Tenacious Raccoon!</h2>
+                <form id="form">
+                  <div class="name-section">
+                    <h4>Enter Name</h4>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter first name" required="required">
+                    
+                    <label for="middle-initial">Middle Initial</label>
+                    <input type="text" id="middle-initial" name="middle-initial" maxlength="1" placeholder="Enter middle initial" required="required">
+                    
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter last name" required="required">
+                  </div>
+
+                  <div class="count-section">
+                    <h4>Choose Total Count</h4>
+                    <label for="count">How high do you want to count?</label>
+                    <input type="number" id="count" name="count" value="125" max="125" required="required">
+                  </div>
+
+                  <div class="divisor-section">
+                    <h4>Choose Divisors</h4>
+                    <label for="first-divisor">What is the first divisor?</label>
+                    <input type="number" id="first-divisor" name="first-divisor" value="3" required="required">
+
+                    <label for="second-divisor"> What is the second divisor?</label>
+                    <input type="number" id="second-divisor" name="second-divisor" value="5" required="required">
+
+                    <label for="third-divisor"> What is the third divisor?</label>
+                    <input type="number" id="third-divisor" name="third-divisor" value="7" required="required">
+                  </div>
+
+                  <div class="word-section">
+                    <h4>Choose Words</h4>
+                    <label for="first-word"> What is the first word?</label>
+                    <input type="text" id="first-word" name="first-word" value="Tenacious" required="required">
+
+                    <label for="second-word"> What is the second word?</label>
+                    <input type="text" id="second-word" name="second-word" value="Eclectic" required="required">
+
+                    <label for="third-word"> What is the third word?</label>
+                    <input type="text" id="third-word" name="third-word" value="Raccoon" required="required">
+                </div>
+                    <label for="submit"></label>
+                    <input type="submit" id="submit" name="submit" value="Submit">
+                </form>
+                
+                <div id="output-container"></div>
+        </main>
+        
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLInclude.js"></script>
+        <script src="scripts/fizzbuzz4.js"></script>
+</body>
+</html>
