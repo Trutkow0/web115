@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Update the greeting text
-        greeting.textContent = `Fizz Buzz 4 | Welcome to Tenacious Raccoon, ${fullName}!`;
+        greeting.textContent = `Welcome to Tenacious Raccoon, ${fullName}!`;
 
         // Clear previous output if any
         outputContainer.innerHTML = "";
