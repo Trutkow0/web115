@@ -8,14 +8,28 @@ html {
   
   header {
     background-color: #36454F;
-    margin: 0;
-    height: 80px;
+    margin: 60px auto;
+  }
+
+  header figure {
+    display: block;
+    margin: -60px auto;
+  }
+
+  .header-1 {
+    display: inline;
+    padding-right: 150px;
+    margin-left: 455px;
+  }
+
+  .header-2 {
+    display: inline;
   }
 
   /*Nav Bar Styles*/
   nav {
     background-color: #302924;
-    margin: 0;
+    margin: 25px auto;
   }
   
   nav ul {
@@ -24,7 +38,8 @@ html {
     flex-direction: row;
     justify-content: center;
     padding: 10px;
-    margin: 0;   
+    margin: 0;
+    
   }
   
   nav li {
@@ -55,6 +70,15 @@ html {
 nav li.dropdown {
   position: relative;
   padding: 5px;
+  box-shadow: -1px -1px 1px #161310, -2px -2px 2px #1f1815, -3px -3px 3px #1a1613; /*box-shadow: 0 2px 5px rgba(0, 0, 0, 1);*/
+}
+
+/*Carrot to indicate dropdown*/
+.carrot {
+  display: inline-block;
+  transform: rotate(180deg);
+  position: relative;
+  top: -2px;
 }
 
 /* Style for dropdown toggle (parent item) */
@@ -72,7 +96,7 @@ nav li .dropdown-menu {
   top: 100%;
   left: 0;
   background-color: #302924;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px #110f0d;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -131,14 +155,12 @@ nav li.dropdown:hover > a {
   h1 {
     display: block;
     text-align: center;
-    padding-top: 15px;
-    margin: 50px 0 15px 0;
     font-size: 2.5em;
     color: #BCC5AA;
   }
 
   h2 {
-    margin-top: 65px;
+    margin-top: -5px;
     font-size: 2em;
     color: #302924;
     text-align: center;
@@ -149,6 +171,7 @@ nav li.dropdown:hover > a {
     margin-top: 25px;
     margin-bottom: 0;
     color: #302924;
+    text-align: center;
   }
 
   /*Body Styles*/
@@ -161,12 +184,16 @@ nav li.dropdown:hover > a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto 200px;
+    margin: auto 500px;
   }
   
   body main p {
     padding: 5px;
     font-size: 1.5em;
+  }
+
+  body main figure p {
+    font-size: 1.75em;
   }
   
   body main p a {
@@ -187,14 +214,28 @@ nav li.dropdown:hover > a {
     margin-top: 25px;
   }
 
+  /*Link within Introduction courses list*/
+  body main ul li a {
+    color: #36454F;
+  }
+
+  body main ul li a:hover {
+    color: #D97335;
+  }
+
   body main li ul {
     font-size: 1em;
+  }
+
+  body main figure figcaption {
+    font-size: 1.5em;
+    margin-top: 25px;
   }
 
   /*Footer Styles*/
   footer {
     margin-top: 35px;
-    font-size: 1.25em;
+    font-size: 1.5em;
     background-color: #36454F;
     color: #BCC5AA;
   }
@@ -209,7 +250,7 @@ nav li.dropdown:hover > a {
   }
   
   footer p a {
-    text-decoration: none;
+    text-decoration: underline;
     padding: 0;
     margin: 0;
   }
