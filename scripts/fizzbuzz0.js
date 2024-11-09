@@ -37,6 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Clear previous output if any
         outputContainer.innerHTML = "";
 
+        // Clear output when reset button is clicked
+        document.getElementById("reset").addEventListener("click", function() {
+            document.getElementById("output-container").innerHTML ="";
+        });
+
         // Generate the lines based on the input number
         for (let i = 1; i <= countNumber; i++) {
             const line = document.createElement("p");
