@@ -188,6 +188,7 @@ nav li.dropdown:hover > a {
   }
   
   body main p {
+    margin: 0;
     padding: 5px;
     font-size: 1.5em;
   }
