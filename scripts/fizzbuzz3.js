@@ -35,6 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
                                 // Clear previous output if any
                                 outputContainer.innerHTML = "";
 
+                                // Clear output when reset button is clicked
+                                document.getElementById("reset").addEventListener("click", function() {
+                                    document.getElementById("output-container").innerHTML ="";
+                                });
+
                             // Show output container after click
                             outputContainer.style.display="block";
 
