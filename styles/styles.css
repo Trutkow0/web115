@@ -284,6 +284,10 @@ nav li.dropdown:hover > a {
     box-shadow: 3px 3px 3px #302924, 6px 6px 6px #3a312b, 9px 9px 9px #423831;
   }
 
+  form label {
+      font-size: 1.25em;
+  }
+
   .name-section {
     display: flex;
     flex-direction: column;
