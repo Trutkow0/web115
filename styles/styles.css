@@ -326,6 +326,13 @@ nav li.dropdown:hover > a {
     border-radius: 2.5%;
   }
 
+  form #reset {
+    background-color: #D97335;
+    color: #BCC5AA;
+    font-style: normal; 
+    border-radius: 2.5%;
+  }
+
   /*output-container styles for Fizz Buzz*/
   #output-container {
     display: none;
