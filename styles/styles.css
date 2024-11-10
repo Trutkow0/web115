@@ -19,7 +19,7 @@ html {
   .header-1 {
     display: inline;
     padding-right: 150px;
-    margin-left: 530px;
+    margin-left: 455px;
   }
 
   .header-2 {
@@ -174,6 +174,11 @@ nav li.dropdown:hover > a {
     text-align: center;
   }
 
+  h4 {
+    margin: auto;
+    font-size: 1.15em;
+  }
+
   /*Body Styles*/
   body {
     padding: 0;
@@ -277,43 +282,105 @@ nav li.dropdown:hover > a {
   form {
     display: flex;
     flex-direction: column;
-    padding: 25px 25px 0;
+    margin: auto;
+    padding: 15px;
     background-color: #abb693;
     color: #302924;
-    margin: 0 auto;
     font-size: 1.25em;
     box-shadow: 3px 3px 3px #302924, 6px 6px 6px #3a312b, 9px 9px 9px #423831;
   }
 
-  form label {
-      font-size: 1.25em;
-  }
+  #form-4 {
+    display: flex;
+    flex-direction: column;
+    margin-left: -275px;
+    width: 175%;
+    background-color: #abb693;
+    color: #302924;
+    font-size: 1.25em;
+    box-shadow: 3px 3px 3px #302924, 6px 6px 6px #3a312b, 9px 9px 9px #423831;
+    }
 
+  form label {
+    font-size: 1.15em;
+  }
+ 
+  /*Name Section of Form*/
   .name-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin: auto;
   }
 
+  .name-section label {
+    padding: 15px;
+  }
+
+  .name-section input {
+    max-width: 175px;
+    position: relative;
+    top: 10px;
+    font-size: 1em;
+  }
+
+  /*Count Section of Form*/
   .count-section {
     display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-  }
-  .divisor-section {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+    flex-direction: row;
+    margin: auto;
   }
 
+  .count-section label {
+    padding: 15px;
+  }
+
+  .count-section input {
+    max-width: 100px;
+    position: relative;
+    top: 10px;
+  }
+
+  /*Divisor Section of Form*/
+  .divisor-section {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+
+  .divisor-section label {
+    padding: 15px;
+    margin: auto;
+  }
+
+  .divisor-section input {
+    max-width: 100px;
+    position: relative;
+    top: 0;
+    margin: auto;
+  }
+
+  /*Word Section of Form*/
   .word-section {
     display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+    flex-direction: row;
+    margin: auto;
+  }
+
+  .word-section label {
+    padding: 15px;
+    margin: auto;
+  }
+
+  .word-section input {
+    max-width: 150px;
+    position: relative;
+    margin: auto;
+    top: 0;
   }
 
   input {
     margin-bottom: 25px;
-    padding: 5px;
+    padding: 0;
     font-size: 1.15em;
     color: #302924;
     background-color: #BCC5AA;
@@ -325,6 +392,8 @@ nav li.dropdown:hover > a {
     color: #BCC5AA;
     font-style: normal; 
     border-radius: 2.5%;
+    width: 100px;
+    margin: 15px auto;
   }
 
   form #reset {
@@ -332,6 +401,8 @@ nav li.dropdown:hover > a {
     color: #BCC5AA;
     font-style: normal; 
     border-radius: 2.5%;
+    width: 100px;
+    margin: 0 auto 15px;
   }
 
   /*output-container styles for Fizz Buzz*/
@@ -344,6 +415,11 @@ nav li.dropdown:hover > a {
     box-shadow: inset 0px 2px 5px #302924;
     overflow-y: auto;
     max-height: 510px;
+  }
+
+  #output-container p {
+    margin: auto;
+    padding: 0;
   }
 
   /*Run button styles for Fizz Buzz 1*/
