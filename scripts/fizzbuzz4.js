@@ -1,6 +1,6 @@
 // Wait for the DOM to fully load before attaching event listeners
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("form");
+    const form = document.getElementById("form-4");
     const greeting = document.getElementById("greeting");
     const outputContainer = document.getElementById("output-container");
 
