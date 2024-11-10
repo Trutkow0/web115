@@ -293,8 +293,8 @@ nav li.dropdown:hover > a {
   #form-4 {
     display: flex;
     flex-direction: column;
-    margin-left: -275px;
-    width: 175%;
+    margin-left: -360px;
+    min-width: 175%;
     background-color: #abb693;
     color: #302924;
     font-size: 1.25em;
