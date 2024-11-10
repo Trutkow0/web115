@@ -289,8 +289,11 @@ nav li.dropdown:hover > a {
   #form-4 {
     display: flex;
     flex-direction: column;
-    margin-left: -360px;
-    min-width: 175%;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 1rem;
     background-color: #abb693;
     color: #302924;
     font-size: 1.25em;
@@ -304,34 +307,42 @@ nav li.dropdown:hover > a {
   /*Name Section of Form*/
   .name-section {
     display: flex;
-    flex-direction: row;
-    margin: auto;
+    align-items: center;
+    margin-bottom: 1rem;
   }
 
   .name-section label {
-    padding: 15px;
+    flex: 1;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
 
   .name-section input {
-    max-width: 175px;
+    flex: 2;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: .85em;
     position: relative;
     top: 10px;
-    font-size: 1em;
   }
 
   /*Count Section of Form*/
   .count-section {
     display: flex;
-    flex-direction: row;
-    margin: auto;
+    align-items: center;
+    margin-bottom: 1rem;
   }
 
   .count-section label {
-    padding: 15px;
+    flex: 1;
+    padding: 0;
+    margin: 0;
   }
 
   .count-section input {
-    max-width: 100px;
+    flex: 2;
+    max-width: 10%;
+    padding: 0.5rem;
     position: relative;
     top: 10px;
   }
@@ -339,39 +350,40 @@ nav li.dropdown:hover > a {
   /*Divisor Section of Form*/
   .divisor-section {
     display: flex;
-    flex-direction: row;
-    margin: auto;
+    align-items: center;
+    margin-bottom: 1rem;
   }
 
   .divisor-section label {
-    padding: 15px;
-    margin: auto;
+    flex: 1;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   .divisor-section input {
-    max-width: 100px;
+    flex: 2;
+    max-width: 10%;
     position: relative;
-    top: 0;
-    margin: auto;
+    top: 10px;
   }
 
   /*Word Section of Form*/
   .word-section {
     display: flex;
-    flex-direction: row;
-    margin: auto;
+    align-items: center;
+    margin-bottom: 1rem;
   }
 
   .word-section label {
-    padding: 15px;
-    margin: auto;
+    flex: 1;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   .word-section input {
-    max-width: 150px;
-    position: relative;
-    margin: auto;
-    top: 0;
+    flex: 2;
+    width: 50%;
+    padding: 0.5rem;
   }
 
   input {
