@@ -13,17 +13,13 @@ html {
 
   header figure {
     display: block;
+    position: relative;
+    top: -18px;
     margin: -60px auto;
   }
 
-  .header-1 {
-    display: inline-block;
-    padding-right: 150px;
-    margin-left: 530px;
-  }
-
-  .header-2 {
-    display: inline-block;
+  .header-1 .header-2{
+    display: block;
   }
 
   /*Nav Bar Styles*/
