@@ -11,7 +11,7 @@ html {
     margin: 60px auto;
   }
 
-  header figure {
+  .header-figure {
     display: block;
     position: relative;
     top: -18px;
