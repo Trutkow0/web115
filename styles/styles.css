@@ -8,7 +8,7 @@ html {
   
   header {
     background-color: #36454F;
-    margin: 60px auto;
+    margin: 60px auto 0;
   }
 
   .header-figure {
@@ -374,6 +374,7 @@ nav li.dropdown:hover > a {
 
 /*Cell*/
 .form td {
+  font-size: 1.25em;
   padding: 10px;
   vertical-align: middle;
 }
@@ -382,6 +383,7 @@ nav li.dropdown:hover > a {
 label {
   display: block;
   font-weight: bold;
+  font-size: 1em;
   margin-bottom: 5px;
 }
 
@@ -390,7 +392,7 @@ input[type="text"],
 input[type="number"] {
   width: 100%;
   padding: 8px;
-  font-size: 14px;
+  font-size: 0.75em;
   border: 1px solid #302924;
   border-radius: 4px;
   box-sizing: border-box;
@@ -401,7 +403,7 @@ input[type="submit"],
 input[type="reset"] {
   display: inline-block;
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 0.75em;
   color: #fff;
   background-color: #D97335;
   border: none;
@@ -409,7 +411,7 @@ input[type="reset"] {
   cursor: pointer;
   margin-top: 10px;
   position: relative;
-  left: 150px;
+  left: 140px;
 }
 
 input[type="submit"]:hover,
