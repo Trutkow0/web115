@@ -8,7 +8,7 @@
         <meta name="keywords" content="Tim Rutkowski">
         <meta name="description" content="Website for WEB115">
         <meta name="author" content="Timothy Rutkowski">
-        <link rel="icon" href="images/TR_fav.png">
+        <link rel="icon" href="images/TR_darkFavicon.png">
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/styles_mobile.css">
         <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
@@ -18,58 +18,87 @@
 <body>
         <div data-include="components/header.html"></div>
         
-        <main>
+        <main class="fizzbuzz4">
                 <h2>Fizz Buzz 4</h2>
                 <h3 id="greeting">Welcome to Tenacious Raccoon!</h3>
+
+                <table class="form">
                 <form id="form-4">
-                  <h4>Enter Name</h4>
-                  <div class="name-section">
-                    <label for="first-name">First Name</label>
+                  <th>Enter Name</th>
+                    <tr class="name-section">
+                    <td>
+                    <label for="first-name">First: </label>
                     <input type="text" id="first-name" name="first-name" placeholder="Enter first name">
+                    </td>
                     
-                    <label for="middle-initial">Middle Initial</label>
+                    <td>
+                    <label for="middle-initial">Middle: </label>
                     <input type="text" id="middle-initial" name="middle-initial" maxlength="1" placeholder="Enter middle initial">
+                    </td>
                     
-                    <label for="last-name">Last Name</label>
+                    <td>
+                    <label for="last-name">Last: </label>
                     <input type="text" id="last-name" name="last-name" placeholder="Enter last name">
-                  </div>
+                    </td>
+                    </tr>
 
-                  <h4>Choose Total Count</h4>
-                  <div class="count-section">
-                    <label for="count">How high do you want to count?</label>
+                  <th>Choose Total Count</th>
+                    <tr class="count-section">
+                    <td>
+                    <label for="count">Count: </label>
                     <input type="number" id="count" name="count" value="125" required="required">
-                  </div>
+                    </td>
+                    </tr>
 
-                  <h4>Choose Divisors</h4>
-                  <div class="divisor-section">
-                    <label for="first-divisor">What is the first divisor?</label>
+                  <th>Choose Divisors</th>
+                    <tr class="divisor-section">
+                    <td>
+                    <label for="first-divisor">First: </label>
                     <input type="number" id="first-divisor" name="first-divisor" value="3" required="required">
+                    </td>
 
-                    <label for="second-divisor"> What is the second divisor?</label>
+                    <td>
+                    <label for="second-divisor">Second: </label>
                     <input type="number" id="second-divisor" name="second-divisor" value="5" required="required">
+                    </td>
 
-                    <label for="third-divisor"> What is the third divisor?</label>
+                    <td>
+                    <label for="third-divisor">Third: </label>
                     <input type="number" id="third-divisor" name="third-divisor" value="7" required="required">
-                  </div>
+                    </td>
+                    </tr>
 
-                  <h4>Choose Words</h4>
-                  <div class="word-section">
-                    <label for="first-word"> What is the first word?</label>
+                  <th>Choose Words</th>
+                    <tr class="word-section">
+                    <td>
+                    <label for="first-word">First: </label>
                     <input type="text" id="first-word" name="first-word" value="Tenacious" required="required">
+                    </td>
 
-                    <label for="second-word"> What is the second word?</label>
+                    <td>
+                    <label for="second-word">Second: </label>
                     <input type="text" id="second-word" name="second-word" value="Eclectic" required="required">
+                    </td>
 
-                    <label for="third-word"> What is the third word?</label>
+                    <td>
+                    <label for="third-word">Third: </label>
                     <input type="text" id="third-word" name="third-word" value="Raccoon" required="required">
-                  </div>
+                    </td>
+                    </tr>
 
+                  <tr>
+                  <td>
                   <label for="submit"></label>
                   <input type="submit" id="submit" name="submit" value="Submit">
+                  </td>
 
+                  <td>
                   <label for="reset"></label>
                   <input type="reset" id="reset">
+                  </td>
+                  </tr>
                 </form>
+                </table>
 
                 <div id="output-container"></div>
         </main>
