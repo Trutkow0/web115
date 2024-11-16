@@ -8,7 +8,7 @@
         <meta name="keywords" content="Tim Rutkowski">
         <meta name="description" content="Website for WEB115">
         <meta name="author" content="Timothy Rutkowski">
-        <link rel="icon" href="images/TR_fav.png">
+        <link rel="icon" href="images/TR_darkFavicon.png">
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/styles_mobile.css">
         <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
@@ -21,25 +21,51 @@
         <main>
             <h2>Fizz Buzz 0</h2>
             <h3 id="greeting">Welcome to Tenacious Raccoon!</h3>
-            <form id="name-form">
-                <label for="first-name">First Name*</label>
-                <input type="text" id="first-name" name="first-name" placeholder="Enter first name" required="required">
-                
-                <label for="middle-initial">Middle Initial</label>
-                <input type="text" id="middle-initial" name="middle-initial" maxlength="1" placeholder="Enter middle initial">
-                
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Enter last name">
 
+            <table class="form">
+            <form id="name-form">
+                <tr>
+                <th>
+                <label for="first-name">First Name*</label>
+                </th>
+                <td>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter first name" required="required">
+                </td>
+                </tr>
+                
+                <tr>
+                <th>
+                <label for="middle-initial">Middle Initial</label>
+                </th>
+                <td>
+                <input type="text" id="middle-initial" name="middle-initial" maxlength="1" placeholder="Enter middle initial">
+                </td>
+                </tr>
+                
+                <tr>
+                <th>
+                <label for="last-name">Last Name</label>
+                </th>
+                <td>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter last name">
+                </td>
+                </tr>
+
+                <tr>
+                <td>
                 <label for="submit"></label>
                 <input type="submit" id="submit" name="submit" value="Submit">
+                </td>
 
+                <td>
                 <label for="reset"></label>
                 <input type="reset" id="reset">
+                </td>
+                </tr>
             </form>
+            </table>
 
                 <div id="output-container"></div>
-
         </main>
         
         <div data-include="components/footer.html"></div>
