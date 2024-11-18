@@ -109,7 +109,7 @@ nav li .dropdown-menu li {
 }
 
 /* Links inside dropdown menu */
-nav li .dropdown-menu li a {The name section of your form needs to move left in order to stay balanced with the alignment of the rest of your page since it is wider than your other sections.
+nav li .dropdown-menu li a {
   color: #BCC5AA;
   background-color: #302924;
   text-decoration: none;
