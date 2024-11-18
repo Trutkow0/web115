@@ -428,6 +428,10 @@ input[type="reset"]:hover {
     display: none;
     margin: 25px auto;
     padding: 0 50px;
+    width: 100%;
+    max-width: 500px;
+    border-collapse: collapse;
+    border-radius: 8px;
     background-color: #abb693;
     color: #302924;
     box-shadow: inset 0px 2px 5px #302924;
