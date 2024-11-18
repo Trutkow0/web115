@@ -427,9 +427,9 @@ input[type="reset"]:hover {
   #output-container {
     display: none;
     margin: 25px auto;
-    padding: 0 50px;
+    padding: 5px 15px;
     width: 100%;
-    max-width: 500px;
+    max-width: 565px;
     border-collapse: collapse;
     border-radius: 8px;
     background-color: #abb693;
