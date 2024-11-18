@@ -22,48 +22,27 @@
             <h2>Fizz Buzz 0</h2>
             <h3 id="greeting">Welcome to Tenacious Raccoon!</h3>
 
-            <table class="form">
-            <form id="name-form">
-                <tr>
-                <th>
-                <label for="first-name">First Name*</label>
-                </th>
-                <td>
-                <input type="text" id="first-name" name="first-name" placeholder="Enter first name" required="required">
-                </td>
-                </tr>
+            <form id="name-form" class="form">
+                <div class="form-group">
+                  <label for="first-name">First Name*</label>
+                  <input type="text" id="first-name" name="first-name" placeholder="Enter first name" required>
+                </div>
                 
-                <tr>
-                <th>
-                <label for="middle-initial">Middle Initial</label>
-                </th>
-                <td>
-                <input type="text" id="middle-initial" name="middle-initial" maxlength="1" placeholder="Enter middle initial">
-                </td>
-                </tr>
+                <div class="form-group">
+                  <label for="middle-initial">Middle Initial</label>
+                  <input type="text" id="middle-initial" name="middle-initial" maxlength="1" placeholder="Enter middle initial">
+                </div>
                 
-                <tr>
-                <th>
-                <label for="last-name">Last Name</label>
-                </th>
-                <td>
-                <input type="text" id="last-name" name="last-name" placeholder="Enter last name">
-                </td>
-                </tr>
-
-                <tr>
-                <td>
-                <label for="submit"></label>
-                <input type="submit" id="submit" name="submit" value="Submit">
-                </td>
-
-                <td>
-                <label for="reset"></label>
-                <input type="reset" id="reset">
-                </td>
-                </tr>
-            </form>
-            </table>
+                <div class="form-group">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" name="last-name" placeholder="Enter last name">
+                </div>
+                
+                <div class="form-actions">
+                  <input type="submit" id="submit" name="submit" value="Submit">
+                  <input type="reset" id="reset" value="Reset">
+                </div>
+              </form>
 
                 <div id="output-container"></div>
         </main>
