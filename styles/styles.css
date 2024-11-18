@@ -109,7 +109,7 @@ nav li .dropdown-menu li {
 }
 
 /* Links inside dropdown menu */
-nav li .dropdown-menu li a {
+nav li .dropdown-menu li a {The name section of your form needs to move left in order to stay balanced with the alignment of the rest of your page since it is wider than your other sections.
   color: #BCC5AA;
   background-color: #302924;
   text-decoration: none;
@@ -486,7 +486,7 @@ input[type="reset"]:hover {
     margin: 25px auto;
     padding: 5px 15px;
     width: 100%;
-    max-width: 600px;
+    max-width: 1200px;
     box-sizing: border-box;
     border-collapse: collapse;
     border-radius: 8px;
