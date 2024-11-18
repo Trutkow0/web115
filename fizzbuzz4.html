@@ -22,83 +22,74 @@
                 <h2>Fizz Buzz 4</h2>
                 <h3 id="greeting">Welcome to Tenacious Raccoon!</h3>
 
-                <table class="form">
                 <form id="form-4">
-                  <th>Enter Name</th>
-                    <tr class="name-section">
-                    <td>
-                    <label for="first-name">First: </label>
-                    <input type="text" id="first-name" name="first-name" placeholder="Enter first name">
-                    </td>
-                    
-                    <td>
-                    <label for="middle-initial">Middle: </label>
-                    <input type="text" id="middle-initial" name="middle-initial" maxlength="1" placeholder="Enter middle initial">
-                    </td>
-                    
-                    <td>
-                    <label for="last-name">Last: </label>
-                    <input type="text" id="last-name" name="last-name" placeholder="Enter last name">
-                    </td>
-                    </tr>
-
-                  <th>Choose Total Count</th>
-                    <tr class="count-section">
-                    <td>
-                    <label for="count">Count: </label>
-                    <input type="number" id="count" name="count" value="125" required="required">
-                    </td>
-                    </tr>
-
-                  <th>Choose Divisors</th>
-                    <tr class="divisor-section">
-                    <td>
-                    <label for="first-divisor">First: </label>
-                    <input type="number" id="first-divisor" name="first-divisor" value="3" required="required">
-                    </td>
-
-                    <td>
-                    <label for="second-divisor">Second: </label>
-                    <input type="number" id="second-divisor" name="second-divisor" value="5" required="required">
-                    </td>
-
-                    <td>
-                    <label for="third-divisor">Third: </label>
-                    <input type="number" id="third-divisor" name="third-divisor" value="7" required="required">
-                    </td>
-                    </tr>
-
-                  <th>Choose Words</th>
-                    <tr class="word-section">
-                    <td>
-                    <label for="first-word">First: </label>
-                    <input type="text" id="first-word" name="first-word" value="Tenacious" required="required">
-                    </td>
-
-                    <td>
-                    <label for="second-word">Second: </label>
-                    <input type="text" id="second-word" name="second-word" value="Eclectic" required="required">
-                    </td>
-
-                    <td>
-                    <label for="third-word">Third: </label>
-                    <input type="text" id="third-word" name="third-word" value="Raccoon" required="required">
-                    </td>
-                    </tr>
-
-                  <tr>
-                  <td>
-                  <label for="submit"></label>
-                  <input type="submit" id="submit" name="submit" value="Submit">
-                  </td>
-
-                  <td>
-                  <label for="reset"></label>
-                  <input type="reset" id="reset">
-                  </td>
-                  </tr>
+                  <div class="form-row">
+                    <!-- Name Section -->
+                    <div class="form-section">
+                      <h3>Enter Name</h3>
+                      <div class="input-group">
+                        <label for="first-name">First:</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Enter first name">
+                      </div>
+                      <div class="input-group">
+                        <label for="middle-initial">Middle:</label>
+                        <input type="text" id="middle-initial" name="middle-initial" maxlength="1" placeholder="Enter middle initial">
+                      </div>
+                      <div class="input-group">
+                        <label for="last-name">Last:</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Enter last name">
+                      </div>
+                    </div>
+                
+                    <!-- Count Section -->
+                    <div class="form-section">
+                      <h3>Choose Total Count</h3>
+                      <div class="input-group">
+                        <label for="count">Count:</label>
+                        <input type="number" id="count" name="count" value="125" required>
+                      </div>
+                    </div>
+                
+                    <!-- Divisor Section -->
+                    <div class="form-section">
+                      <h3>Choose Divisors</h3>
+                      <div class="input-group">
+                        <label for="first-divisor">First:</label>
+                        <input type="number" id="first-divisor" name="first-divisor" value="3" required>
+                      </div>
+                      <div class="input-group">
+                        <label for="second-divisor">Second:</label>
+                        <input type="number" id="second-divisor" name="second-divisor" value="5" required>
+                      </div>
+                      <div class="input-group">
+                        <label for="third-divisor">Third:</label>
+                        <input type="number" id="third-divisor" name="third-divisor" value="7" required>
+                      </div>
+                    </div>
+                
+                    <!-- Words Section -->
+                    <div class="form-section">
+                      <h3>Choose Words</h3>
+                      <div class="input-group">
+                        <label for="first-word">First:</label>
+                        <input type="text" id="first-word" name="first-word" value="Tenacious" required>
+                      </div>
+                      <div class="input-group">
+                        <label for="second-word">Second:</label>
+                        <input type="text" id="second-word" name="second-word" value="Eclectic" required>
+                      </div>
+                      <div class="input-group">
+                        <label for="third-word">Third:</label>
+                        <input type="text" id="third-word" name="third-word" value="Raccoon" required>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="button-group">
+                    <input type="submit" id="submit" name="submit" value="Submit">
+                    <input type="reset" id="reset" value="Reset">
+                  </div>
                 </form>
-                </table>
 
                 <div id="output-container"></div>
         </main>
