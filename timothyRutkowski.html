@@ -23,7 +23,6 @@
                 min-width: 400px;
                 margin: auto;
                 padding: 0;
-                /*background-color: aliceblue;*/
                 background-image: radial-gradient(circle at bottom left, #FDFBD4 55%, #D97335, #302924);
             }
 
@@ -33,6 +32,7 @@
                 font-size: 1.5em;
                 text-align: left;
                 width: 50%;
+                /*border: 1px solid darkblue*/
             }
 
             .business-card-h3 {
@@ -42,6 +42,7 @@
                 text-align: left;
                 border-bottom: 1px solid black;
                 width: 50%;
+                /*border: 1px solid purple;*/
             }
 
             .business-card-h4 {
@@ -50,17 +51,17 @@
                 font-size: .85em;
                 text-align: left;
                 display: inline;
-                /*border: 1px solid red;*/
+                /*border: 1px solid orange;*/
             }
 
             .contact {
                 list-style-type: none;
-                margin: 10px 0 25px 5px;
+                margin: 10px 0;
                 padding: 0;
                 width: 100%;
                 text-align: left;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                /*border: 1px solid blue;*/
+                /*border: 1px solid yellow;*/
             }
 
             .business-card-li {
@@ -75,12 +76,26 @@
                 font-size: .85em;
                 text-align: left;
                 display: inline;
+                /*border: 1px solid blue;*/
+            }
+
+            .stamp {
+                margin: 0;
+                position: relative;
+                width: 8%;
+                top: 185px;
+                left: 965px;
+                /*border: 1px solid red;*/
             }
         </style>
 </head>
   
 <body>
         <div data-include="components/header.html"></div>
+
+        <figure class="stamp">
+            <img src="images/TR_header.png" alt="Tenacious Raccon logo" height="75" width="100">
+        </figure>
         
         <main class="business-card">
             <h2 class="business-card-h2">Timothy Rutkowski</h2>
