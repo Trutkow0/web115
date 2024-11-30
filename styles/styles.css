@@ -433,13 +433,13 @@ input[type="text"] {
   margin-bottom: 15px;
 }
 
-label {
+/*label {
   display: block;
   font-weight: bold;
   font-size: 1.25em;
   margin-left: 50px;
   margin-bottom: 5px;
-}
+}*/
 
 input[type="text"],
 input[type="number"] {
@@ -499,10 +499,14 @@ input[type="reset"]:hover {
     padding: 0;
   }
 
+    body main label {
+      text-align: center;
+  }
+
   /*Run button styles for Fizz Buzz 1*/
   #run-count {
     display: block;
-    margin: 0 auto;
+    margin: auto;
     background-color: #D97335;
     color: #BCC5AA;
     padding: 10px 20px;
