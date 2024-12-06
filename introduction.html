@@ -2,46 +2,127 @@
 <html lang="en-US" dir="ltr">
 
 <head>
-        <meta charset="utf-8">
-        <title>Timothy Rutkowski's Tenacious Raccoon | Introduction</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Tim Rutkowski">
-        <meta name="description" conent="Website for WEB115">
-        <meta name="author" content="Timothy Rutkowski">
-        <link rel="icon" href="images/TR_fav.png">
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/styles_mobile.css">
-        <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title>Introduction Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Timothy Rutkowski">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="scripts/introduction.js"></script>
 </head>
-  
+
 <body>
-        <div data-include="components/header.html"></div>
-        
-        <main>
-                <h2>Introduction</h2>
+    <div data-include="components/header.html"></div>
+    <main class="introduction">
+        <h2>Introduction</h2>
+        <form id="intro-form">
+            <!-- First Row -->
+            <div class="intro-form-section">
+                <h3 class="intro-h3">Name &amp; Platform</h3>
+                <div class="intro-form-row">
+                    <div class="intro-form-section">
+                        <label class="intro-label" for="name">Name:</label>
+                        <input class="intro-input" type="text" id="name" name="name" value="Timothy Rutkowski" required>
+                    </div>
 
-                <figure>
-                        <img src="images/tree_me.jpg" alt="Me by a tree." width="254" height="449">
-                        <figcaption><i>Enjoying some baseball on a mild spring evening.</i></figcaption>
-                </figure>
+                    <div class="intro-form-section">
+                        <label class="intro-label" for="primary-platform">Primary Computer Platform:</label>
+                        <input class="intro-input" type="text" id="primary-platform" name="primary-platform" value="Laptop/Linux Mint" required>
+                    </div>
+                </div>
+            </div>
 
-                <ul>
-                    <li><strong>Personal Background:</strong> I grew up in Charlotte, I’m a musician, and an avid pro wrestling fan.</li>
-                    <li><strong>Professional Background:</strong> I’ve worked in an After School Program with CMS for 8 years and as an Assistant Rural Carrier for the USPS for 4 years. </li> 
-                    <li><strong>Academic Background:</strong> I’ve completed the AFA - Music degree program at CPCC as well as an Audio Engineering certificate program. After discovering a passion and talent for Web Development I decided to pursue an IT degree in Full Stack Programming.</li> 
-                    <li><strong>Background in this Subject:</strong> I started learning HTML and CSS using LinkedIn Learning courses and practicing by developing my own website hosted on a Linode server. From there I decided I wanted to receive more training and experience in this subject to pursue it as a career and enrolled in the CPCC Full Stack Programming degree. I’ve learned how to develop projects using HTML, CSS, JavaScript, Python, and mySQL. </li> 
-                    <li><strong>Primary Computer Platform:</strong> Laptop/Linux Mint</li> 
-                    <li><strong>Courses I'm Taking &amp; Why:</strong>
-                        <ul>
-                            <li><strong><a href="contract.html">WEB115 - Web Markup &amp; Scripting:</a></strong> I’m looking to expand my knowledge in Web Development and enhance my skills to build more dynamic and interactive projects.</li>
-                            <li><strong>WEB140 - Web Development Tools:</strong> This course will help me to become familiar with common tools used in the industry as well as provide me with tools that can enhance my personal and professional projects.</li> 
-                        </ul>
-                    </li> 
-                    <li><strong>Funny/Interesting Item to Remember me by:</strong> Trying to remember the name “Domingo”, I mispronounced it and said “Dominigo”. I then went on to make a madlibs and only use "Dominigo" to fill in all the spaces. It was so iconic that it is now my brother’s nickname for me.</li>     
-                </ul>
-        </main>
-        
-        <div data-include="components/footer.html"></div>
-        <script src="scripts/HTMLInclude.js"></script>
+            <div class="intro-form-section">
+                <h3 class="intro-h3">Background</h3>
+                <!-- Second Row -->
+                <div class="intro-form-row">
+                    <div class="intro-form-section">
+                        <label class="intro-label" for="personal-background">Personal Background:</label>
+                        <textarea class="intro-input" id="personal-background" name="personal-background" rows="3" required>I grew up in Charlotte, I’m a musician, and an avid pro wrestling fan.</textarea>
+                    </div>
+
+                    <div class="intro-form-section">
+                        <label class="intro-label" for="professional-background">Professional Background:</label>
+                        <textarea class="intro-input" id="professional-background" name="professional-background" rows="3" required>I’ve worked in an After School Program with CMS for 8 years and as an Assistant Rural Carrier for the USPS for 4 years.</textarea>
+                    </div>
+                </div>
+
+                <!-- Third Row -->
+                <div class="intro-form-row">
+                    <div class="intro-form-section">
+                        <label class="intro-label" for="academic-background">Academic Background:</label>
+                        <textarea class="intro-input" id="academic-background" name="academic-background" rows="6" required>I’ve completed the AFA - Music degree program at CPCC as well as an Audio Engineering certificate program. After discovering a passion and talent for Web Development I decided to pursue an IT degree in Full Stack Programming.</textarea>
+                    </div>
+
+                    <div class="intro-form-section">
+                        <label class="intro-label" for="background-subject">Background in this Subject:</label>
+                        <textarea id="background-subject" name="background-subject" rows="6" required>I started learning HTML and CSS using LinkedIn Learning courses and practicing by developing my own website hosted on a Linode server. From there I decided I wanted to receive more training and experience in this subject to pursue it as a career and enrolled in the CPCC Full Stack Programming degree. I’ve learned how to develop projects using HTML, CSS, JavaScript, Python, and mySQL.</textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Courses Section -->
+            <div class="intro-form-section">
+                <h3 class="intro-h3">Courses I'm Taking &amp; Why</h3>
+                <!-- Fourth Row -->
+                <div class="intro-form-row">
+                    <div class="intro-form-section">
+                        <label class="intro-label" for="web115-course">Course:</label>
+                        <input class="intro-input" type="text" id="web115-course" name="web115-course" value="WEB115 Web Markup & Scripting" required>
+                    </div>
+
+                    <div class="intro-form-section">
+                        <label class="intro-label" for="web115-why">Why:</label>
+                        <textarea class="intro-input" id="web115-why" name="web115-why" rows="3" required>I’m looking to expand my knowledge in Web Development and enhance my skills to build more dynamic and interactive projects.</textarea>
+                    </div>
+                </div>
+
+                <!-- Fifth Row -->
+                <div class="intro-form-row">
+                    <div class="intro-form-section">
+                        <label class="intro-label" for="web140-course">Course:</label>
+                        <input class="intro-input" type="text" id="web140-course" name="web140-course" value="WEB140 Web Development Tools" required>
+                    </div>
+
+                    <div class="intro-form-section">
+                        <label class="intro-label" for="web140-why">Why:</label>
+                        <textarea class="intro-input" id="web140-why" name="web140-why" rows="3" required>This course will help me to become familiar with common tools used in the industry as well as provide me with tools that can enhance my personal and professional projects.</textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo Upload Section -->
+            <div class="intro-form-row-inline">
+                <div class="intro-form-section">
+                    <h3 class="intro-h3">Upload Photo</h3>
+                    <div class="intro-input-group">
+                        <input class="intro-input" type="file" id="photo" name="photo" accept="image/*">
+                        <input class="intro-input" type="hidden" id="default-photo" value="images/tree_me.jpg">
+                    </div>
+
+                    <div class="intro-input-group">
+                        <label class="intro-label" for="photo-caption">Caption for Uploaded Photo:</label>
+                    </div>
+
+                    <div class="intro-input-group">
+                        <input id="photo-caption" class="intro-input" type="text" name="photo-caption" value="Enjoying some baseball on a mild spring evening.">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit and Reset Buttons -->
+            <div class="intro-form-row-inline">
+                <div class="intro-button-group">
+                    <input class="intro-input" type="submit" id="submit" value="Submit">
+                    <input class="intro-input" type="reset" id="reset" value="Reset">
+                </div>
+            </div>
+        </form>
+
+        <div id="intro-output-container">
+            <img id="output-photo" alt="Uploaded or Default Photo" width="254" height="449">
+        </div>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
 </body>
 </html>
